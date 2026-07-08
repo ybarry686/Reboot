@@ -7,12 +7,10 @@ from connection import *
 from models import *
 
 
+def search_studios(keyword):
+    s = init_session()
+    return search(s, Studios, keyword, ["name", "address", "description", "category_tags"])
+
 def search_services(keyword):
     s = init_session()
-    all_services = get_elems(s, Services)
-    res = []
-    for service in all_services:
-        if keyword in service:
-            res.append(service)
-    
-    return res
+    return search(s, Services, keyword, ["name", "category", "description"])

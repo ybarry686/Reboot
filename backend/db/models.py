@@ -78,3 +78,17 @@ def get_elems(session, model, **kwargs):
 def exists(session, model, **kwargs):
     return get_elem(session, model, **kwargs) is not None
 
+def search(session, model, keyword, fields):
+    keyword = keyword.lower()
+    res = []
+
+    all_models = get_elems(session, model)
+    
+    for row in all_models: # each elem
+        for field in fields:
+            value = getattr(row, field) # because we can't do row.field
+            if value and keyword in value.lower():
+                res.append(row) # append this elem
+                break # don't have to search the rest since we already know this elem is valid
+    
+    return res
