@@ -2,16 +2,13 @@
 Methods for common queries in regards to the favorites list
 """
 from sqlalchemy import *
+from connection import __init_session__
 from connection import *
+from models import *
 
 # add favorite
 # remove favorite
 # get favorite
-
-def __init_session__():
-    Session = sessionmaker(bind=engine)
-    session = Session()
-    return session
 
 def add_favorite(user_id, studio_id):
     s = __init_session__()
