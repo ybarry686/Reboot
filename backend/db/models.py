@@ -2,7 +2,21 @@ from sqlalchemy import *
 from sqlalchemy.orm.session import Session
 from connection import *
 
-class Users(Base):
+class ReprMixin:
+    '''
+    class that allows for inheritors to have same string representation
+    '''
+
+    def __repr__(self):
+        values = {} # colums->value mapping 
+        for c in self.__table__.columns:
+            key = c.name # column name
+            value = getattr(self, c.name) # value of column
+            values[key] = value
+
+        return f"<{self.__class__.__name__} {values}>"
+
+class Users(Base, ReprMixin):
     __tablename__ = 'users'
     id: Column[int] = Column(Integer, primary_key=True)
     name: Column[str] = Column(String)
@@ -10,7 +24,7 @@ class Users(Base):
     password_hash = Column(String)
     created_at = Column(TIMESTAMP, server_default=func.now())
 
-class Studios(Base):
+class Studios(Base, ReprMixin):
     __tablename__ = 'studios'
     id: Column[int] = Column(Integer, primary_key=True)
     name: Column[str] = Column(String)
@@ -23,18 +37,18 @@ class Studios(Base):
     category_tags: Column[str] = Column(String) # each tag separated by comma
     created_at = Column(TIMESTAMP, server_default=func.now())
 
-class Services(Base):
+class Services(Base, ReprMixin):
     __tablename__ = 'services'
     id: Column[int] = Column(Integer, primary_key=True)
     studio_id = Column(Integer, ForeignKey(Studios.id))
     name: Column[str] = Column(String)
-    category_tags: Column[str] = Column(String)
+    category: Column[str] = Column(String)
     duration_min = Column(Integer)
     price_cents = Column(Integer)
     description: Column[str] = Column(String)
 
-class Bookings(Base):
-    ___tablename__ = 'bookings'
+class Bookings(Base, ReprMixin):
+    __tablename__ = 'bookings'
     id: Column[int] = Column(Integer, primary_key=True)
     user_id = Column(Integer, ForeignKey(Users.id))
     service_id = Column(Integer, ForeignKey(Services.id))
@@ -42,17 +56,25 @@ class Bookings(Base):
     status = Column(String, default="Confirmed") # cancelled, active(?)
     created_at = Column(TIMESTAMP, server_default=func.now())
 
-class Favorites(Base):
+class Favorites(Base, ReprMixin):
     __tablename__ = 'favorites'
     id: Column[int] = Column(Integer, primary_key=True)
     user_id = Column(Integer, ForeignKey(Users.id))
     studio_id = Column(Integer, ForeignKey(Studios.id))
 
 Base.metadata.create_all(engine)
+SessionObj = sessionmaker(bind=engine)
 
-def __init_session__() -> Session:
-    Session = sessionmaker(bind=engine)
-    session = Session()
+def init_session() -> Session:
+    session = SessionObj()
     return session
 
+def get_elem(session, model, **kwargs):
+    return session.query(model).filter_by(**kwargs).first()
+
+def get_elems(session, model, **kwargs):
+    return session.query(model).filter_by(**kwargs)
+
+def exists(session, model, **kwargs):
+    return get_elem(session, model, **kwargs) is not None
 

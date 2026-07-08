@@ -2,7 +2,6 @@
 Methods for common queries in regards to the favorites list
 """
 from sqlalchemy import *
-from connection import __init_session__
 from connection import *
 from models import *
 
@@ -11,23 +10,25 @@ from models import *
 # get favorite
 
 def add_favorite(user_id, studio_id):
-    s = __init_session__()
-    s.add(Favorites(user_id, studio_id))
-    s.commit()
+    s = init_session()
+    if not exists(s, Favorites, user_id=user_id, studio_id=studio_id):
+        s.add(Favorites(user_id=user_id, studio_id=studio_id))
+        s.commit()
     s.close()
 
 def remove_favorite(user_id, studio_id):
-    s = __init_session__()
+    s = init_session()
     fav_to_delete = s.query(Favorites).filter(
-        Favorites.user_id == user_id, Favorites.studio_id == studio_id) 
+        Favorites.user_id == user_id, Favorites.studio_id == studio_id).first()
     if fav_to_delete:
         s.delete(fav_to_delete)
         s.commit()
     s.close()   
 
 def get_favorites_for_user(user_id):
-    s = __init_session__()
+    s = init_session()
     #.query select all favorites, 
     favorites = s.query(Favorites).filter(Favorites.user_id == user_id)
+    s.close()
     return favorites
 
