@@ -11,7 +11,7 @@ FALLBACK_MESSAGE = (
 )
 
 
-def get_recommendation(goal, studios, model="gemini-2.5-flash"):
+def get_recommendation(goal, studios, model="gemini-flash-lite-latest"):
     if not Config.GEMINI_API_KEY:
         return FALLBACK_MESSAGE
     if not studios:
