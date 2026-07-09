@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Favorites — Recovery Hub{% endblock %}
+{% block content %}
+  <h1>Your Favorites</h1>
+  <section class="results-grid">
+    {% for studio in studios %}
+      <article class="studio-card">
+        <h2><a href="{{ url_for('booking.studio_detail', studio_id=studio.id) }}">{{ studio.name }}</a></h2>
+        <p class="address">{{ studio.address }}</p>
+        <div class="tags">
+          {% for tag in studio.category_tags.split(',') %}
+            <span class="tag">{{ tag.replace('_', ' ') }}</span>
+          {% endfor %}
+        </div>
+        <a class="btn-link" href="{{ url_for('booking.studio_detail', studio_id=studio.id) }}">View &amp; book</a>
+      </article>
+    {% else %}
+      <p class="empty-state">Nothing saved yet — tap ♡ Save on a studio you like.</p>
+    {% endfor %}
+  </section>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Import Studios — Recovery Hub{% endblock %}
+{% block content %}
+  <section class="auth-form" style="max-width:480px;">
+    <h1>Import studios from Recovery Hub's API</h1>
+    <p class="muted" style="margin-top:-10px; margin-bottom:16px;">Search below to find the recovery you deserve--enter any city and category below!</p>
+    <form method="post">
+      <label>City / location<input type="text" name="location" placeholder="e.g. Los Angeles, CA" required></label>
+      <label>Category
+        <select name="category" required>
+          <option value="sauna">Sauna</option>
+          <option value="cold_plunge">Cold plunge</option>
+          <option value="massage">Massage</option>
+          <option value="cryotherapy">Cryotherapy</option>
+          <option value="acupuncture">Acupuncture</option>
+        </select>
+      </label>
+      <button type="submit">Import from Recovery Hub's API</button>
+    </form>
+  </section>
+{% endblock %}
