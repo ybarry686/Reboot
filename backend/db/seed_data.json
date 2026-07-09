@@ -1,182 +1,408 @@
 [
-  {
-    "name": "Othership Flatiron",
-    "address": "23 W 20th St, New York, NY 10011, USA",
-    "lat": 40.7404021,
-    "lng": -73.9924415,
-    "phone": "+1 212-381-1699",
-    "description": "Contrast therapy club with guided sauna and cold plunge sessions in Flatiron.",
-    "source_place_id": "ChIJKxPbBwBZwokRkGZEW6k9FsU",
-    "category_tags": "sauna,cold_plunge"
-  },
-  {
-    "name": "Perspire Sauna Studio Flatiron",
-    "address": "50 W 23rd St, New York, NY 10010, USA",
-    "lat": 40.7421095,
-    "lng": -73.9917922,
-    "phone": "+1 646-425-0022",
-    "description": "Private infrared sauna suites with a cold rinse to finish.",
-    "source_place_id": "ChIJZRUpK31ZwokRelH9J1ARTN4",
-    "category_tags": "sauna,cold_plunge"
-  },
-  {
-    "name": "Kove Studio East Village",
-    "address": "268 E 7th St, New York, NY 10009, USA",
-    "lat": 40.7232999,
-    "lng": -73.9773994,
-    "phone": "+1 646-925-1139",
-    "description": "East Village recovery studio pairing sauna and cold plunge sessions.",
-    "source_place_id": "ChIJ37aNselZwokR08dHzsPE4BE",
-    "category_tags": "sauna,cold_plunge"
-  },
-  {
-    "name": "Recoverie - Wellness Club",
-    "address": "135 Bridge Park Dr, Brooklyn, NY 11201, USA",
-    "lat": 40.6932772,
-    "lng": -74.0008476,
-    "phone": "+1 347-457-5380",
-    "description": "Brooklyn wellness club offering cold plunge and recovery bodywork.",
-    "source_place_id": "ChIJLdRBmdUXuC0R2IkUMYoAnhg",
-    "category_tags": "cold_plunge,massage"
-  },
-  {
-    "name": "Elahni",
-    "address": "12 W 27th St Fl 2, New York, NY 10001, USA",
-    "lat": 40.7444682,
-    "lng": -73.9893902,
-    "phone": null,
-    "description": "Small-group guided sauna and cold plunge sessions in a speakeasy-style space.",
-    "source_place_id": "ChIJAzeHxuxZwokRuIAxtgCC_aI",
-    "category_tags": "sauna,cold_plunge"
-  },
-  {
-    "name": "Kontra Baths",
-    "address": "216 Glen Cove Rd, Carle Place, NY 11514, USA",
-    "lat": 40.7487721,
-    "lng": -73.6183899,
-    "phone": "+1 516-272-4884",
-    "description": "Private contrast therapy rooms with infrared sauna and cold plunge.",
-    "source_place_id": "ChIJjV0z42KHwokRuqPcQXdUIWQ",
-    "category_tags": "sauna,cold_plunge"
-  },
-  {
-    "name": "Restore Hyper Wellness - Chelsea",
-    "address": "555 6th Ave, New York, NY 10011, USA",
-    "lat": 40.7383247,
-    "lng": -73.9965648,
-    "phone": "+1 646-344-1350",
-    "description": "Hyper wellness studio with cryotherapy and infrared sauna services.",
-    "source_place_id": "ChIJ2xuBWv1ZwokRNBIGHfxJWiI",
-    "category_tags": "cryotherapy,sauna"
-  },
-  {
-    "name": "Village Thai Spa",
-    "address": "315 Madison Ave Suite 501, New York, NY 10017, USA",
-    "lat": 40.7524393,
-    "lng": -73.9790726,
-    "phone": "+1 315-369-5695",
-    "description": "Midtown Thai spa focused on deep tissue massage and bodywork.",
-    "source_place_id": "ChIJfy270f5ZwokRv090SmdoRH0",
-    "category_tags": "massage"
-  },
-  {
-    "name": "Body Mechanics Orthopedic Massage on 54th",
-    "address": "250 W 54th St #804, New York, NY 10019, USA",
-    "lat": 40.7642452,
-    "lng": -73.983522,
-    "phone": "+1 212-884-1010",
-    "description": "Orthopedic and sports massage clinic for injury recovery and mobility.",
-    "source_place_id": "ChIJj6hpg_BZwokRuV3R4BNJofk",
-    "category_tags": "massage"
-  },
-  {
-    "name": "Bathhouse Flatiron",
-    "address": "14 W 22nd St, New York, NY 10010, USA",
-    "lat": 40.7411801,
-    "lng": -73.991122,
-    "phone": "+1 646-891-1315",
-    "description": "Modern bathhouse with saunas, cold plunges, and massage services.",
-    "source_place_id": "ChIJkTyq0SlZwokRdtbwK-vZxLw",
-    "category_tags": "sauna,cold_plunge,massage"
-  },
-  {
-    "name": "Restore Hyper Wellness - Park Slope",
-    "address": "225 Flatbush Ave, Brooklyn, NY 11217, USA",
-    "lat": 40.6813727,
-    "lng": -73.9752129,
-    "phone": "+1 718-559-0100",
-    "description": "Brooklyn wellness studio offering cryotherapy recovery sessions.",
-    "source_place_id": "ChIJaw53nw1bwokRV8kffBcZC1s",
-    "category_tags": "cryotherapy"
-  },
-  {
-    "name": "New York Sports Acupuncture",
-    "address": "12 Park St Ste 226, Brooklyn, NY 11206, USA",
-    "lat": 40.6991998,
-    "lng": -73.9384703,
-    "phone": "+1 888-375-5444",
-    "description": "Sports acupuncture clinic focused on athletic recovery and pain relief.",
-    "source_place_id": "ChIJKcfuFYtbwokRnZkiTH6d_lc",
-    "category_tags": "acupuncture"
-  },
-  {
-    "name": "Acu For Athletes",
-    "address": "1592 President St, Brooklyn, NY 11213, USA",
-    "lat": 40.6670032,
-    "lng": -73.9352358,
-    "phone": "+1 929-348-2400",
-    "description": "Acupuncture practice for athletes targeting injury recovery and mobility.",
-    "source_place_id": "ChIJibwuZaFbwokRSUDouMYeMDQ",
-    "category_tags": "acupuncture"
-  },
-  {
-    "name": "Cryo Energy",
-    "address": "1300 Union Tpke #108, New Hyde Park, NY 11040, USA",
-    "lat": 40.7531048,
-    "lng": -73.698335,
-    "phone": "+1 516-265-0878",
-    "description": "Long Island wellness center offering whole-body cryotherapy and recovery treatments.",
-    "source_place_id": "ChIJkafkMIBiwokRM6HPMLfGkrs",
-    "category_tags": "cryotherapy"
-  },
-  {
-    "name": "thebodybar",
-    "address": "37 Popham Rd, Scarsdale, NY 10583, USA",
-    "lat": 40.9888615,
-    "lng": -73.8074623,
-    "phone": "+1 914-786-6607",
-    "description": "Scarsdale recovery studio with infrared sauna, cold plunge, and bodywork.",
-    "source_place_id": "ChIJ6wN4ubGTwokRVIEtFldzyF4",
-    "category_tags": "sauna,cold_plunge,massage"
-  },
-  {
-    "name": "Albany Massage Professionals",
-    "address": "435 New Karner Rd, Albany, NY 12205, USA",
-    "lat": 42.7389302,
-    "lng": -73.8412835,
-    "phone": "+1 518-464-4480",
-    "description": "Albany massage practice offering deep tissue and therapeutic bodywork.",
-    "source_place_id": "ChIJWcZ-eVgL3okRZpTgN29pINg",
-    "category_tags": "massage"
-  },
-  {
-    "name": "BOSA Acupuncture & Wellness",
-    "address": "346 Seneca St, Buffalo, NY 14204, USA",
-    "lat": 42.8786169,
-    "lng": -78.8636765,
-    "phone": "+1 716-578-4734",
-    "description": "Buffalo acupuncture clinic focused on pain relief and recovery.",
-    "source_place_id": "ChIJmWWha_J004kRe3RVuu0XAn8",
-    "category_tags": "acupuncture"
-  },
-  {
-    "name": "The Wellness Lab",
-    "address": "1350 University Ave, Rochester, NY 14607, USA",
-    "lat": 43.1501066,
-    "lng": -77.5646286,
-    "phone": "+1 585-690-0693",
-    "description": "Rochester contrast therapy studio with sauna and cold plunge for recovery.",
-    "source_place_id": "ChIJQzmO6aC11okRK5juG0srShU",
-    "category_tags": "sauna,cold_plunge"
-  }
-]
+    {
+      "name": "Othership Flatiron",
+      "address": "23 W 20th St, New York, NY 10011, USA",
+      "lat": 40.7404021,
+      "lng": -73.9924415,
+      "phone": "+1 212-381-1699",
+      "description": "Contrast therapy club with guided sauna and cold plunge sessions in Flatiron.",
+      "source_place_id": "ChIJKxPbBwBZwokRkGZEW6k9FsU",
+      "category_tags": "sauna,cold_plunge",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "45-min Contrast Therapy (Sauna + Cold Plunge)",
+          "category": "sauna",
+          "duration_min": 45,
+          "price_cents": 5500,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Perspire Sauna Studio Flatiron",
+      "address": "50 W 23rd St, New York, NY 10010, USA",
+      "lat": 40.7421095,
+      "lng": -73.9917922,
+      "phone": "+1 646-425-0022",
+      "description": "Private infrared sauna suites with a cold rinse to finish.",
+      "source_place_id": "ChIJZRUpK31ZwokRelH9J1ARTN4",
+      "category_tags": "sauna,cold_plunge",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "45-min Contrast Therapy (Sauna + Cold Plunge)",
+          "category": "sauna",
+          "duration_min": 45,
+          "price_cents": 5500,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Kove Studio East Village",
+      "address": "268 E 7th St, New York, NY 10009, USA",
+      "lat": 40.7232999,
+      "lng": -73.9773994,
+      "phone": "+1 646-925-1139",
+      "description": "East Village recovery studio pairing sauna and cold plunge sessions.",
+      "source_place_id": "ChIJ37aNselZwokR08dHzsPE4BE",
+      "category_tags": "sauna,cold_plunge",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "45-min Contrast Therapy (Sauna + Cold Plunge)",
+          "category": "sauna",
+          "duration_min": 45,
+          "price_cents": 5500,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Recoverie - Wellness Club",
+      "address": "135 Bridge Park Dr, Brooklyn, NY 11201, USA",
+      "lat": 40.6932772,
+      "lng": -74.0008476,
+      "phone": "+1 347-457-5380",
+      "description": "Brooklyn wellness club offering cold plunge and recovery bodywork.",
+      "source_place_id": "ChIJLdRBmdUXuC0R2IkUMYoAnhg",
+      "category_tags": "cold_plunge,massage",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "15-min Guided Cold Plunge",
+          "category": "cold_plunge",
+          "duration_min": 15,
+          "price_cents": 3000,
+          "description": ""
+        },
+        {
+          "name": "60-min Deep Tissue Massage",
+          "category": "massage",
+          "duration_min": 60,
+          "price_cents": 11000,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Elahni",
+      "address": "12 W 27th St Fl 2, New York, NY 10001, USA",
+      "lat": 40.7444682,
+      "lng": -73.9893902,
+      "phone": null,
+      "description": "Small-group guided sauna and cold plunge sessions in a speakeasy-style space.",
+      "source_place_id": "ChIJAzeHxuxZwokRuIAxtgCC_aI",
+      "category_tags": "sauna,cold_plunge",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "45-min Contrast Therapy (Sauna + Cold Plunge)",
+          "category": "sauna",
+          "duration_min": 45,
+          "price_cents": 5500,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Kontra Baths",
+      "address": "216 Glen Cove Rd, Carle Place, NY 11514, USA",
+      "lat": 40.7487721,
+      "lng": -73.6183899,
+      "phone": "+1 516-272-4884",
+      "description": "Private contrast therapy rooms with infrared sauna and cold plunge.",
+      "source_place_id": "ChIJjV0z42KHwokRuqPcQXdUIWQ",
+      "category_tags": "sauna,cold_plunge",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "45-min Contrast Therapy (Sauna + Cold Plunge)",
+          "category": "sauna",
+          "duration_min": 45,
+          "price_cents": 5500,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Restore Hyper Wellness - Chelsea",
+      "address": "555 6th Ave, New York, NY 10011, USA",
+      "lat": 40.7383247,
+      "lng": -73.9965648,
+      "phone": "+1 646-344-1350",
+      "description": "Hyper wellness studio with cryotherapy and infrared sauna services.",
+      "source_place_id": "ChIJ2xuBWv1ZwokRNBIGHfxJWiI",
+      "category_tags": "cryotherapy,sauna",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "3-min Whole Body Cryotherapy",
+          "category": "cryotherapy",
+          "duration_min": 3,
+          "price_cents": 4500,
+          "description": ""
+        },
+        {
+          "name": "60-min Infrared Sauna Session",
+          "category": "sauna",
+          "duration_min": 60,
+          "price_cents": 4500,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Village Thai Spa",
+      "address": "315 Madison Ave Suite 501, New York, NY 10017, USA",
+      "lat": 40.7524393,
+      "lng": -73.9790726,
+      "phone": "+1 315-369-5695",
+      "description": "Midtown Thai spa focused on deep tissue massage and bodywork.",
+      "source_place_id": "ChIJfy270f5ZwokRv090SmdoRH0",
+      "category_tags": "massage",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "60-min Deep Tissue Massage",
+          "category": "massage",
+          "duration_min": 60,
+          "price_cents": 11000,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Body Mechanics Orthopedic Massage on 54th",
+      "address": "250 W 54th St #804, New York, NY 10019, USA",
+      "lat": 40.7642452,
+      "lng": -73.983522,
+      "phone": "+1 212-884-1010",
+      "description": "Orthopedic and sports massage clinic for injury recovery and mobility.",
+      "source_place_id": "ChIJj6hpg_BZwokRuV3R4BNJofk",
+      "category_tags": "massage",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "60-min Deep Tissue Massage",
+          "category": "massage",
+          "duration_min": 60,
+          "price_cents": 11000,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Bathhouse Flatiron",
+      "address": "14 W 22nd St, New York, NY 10010, USA",
+      "lat": 40.7411801,
+      "lng": -73.991122,
+      "phone": "+1 646-891-1315",
+      "description": "Modern bathhouse with saunas, cold plunges, and massage services.",
+      "source_place_id": "ChIJkTyq0SlZwokRdtbwK-vZxLw",
+      "category_tags": "sauna,cold_plunge,massage",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "45-min Contrast Therapy (Sauna + Cold Plunge)",
+          "category": "sauna",
+          "duration_min": 45,
+          "price_cents": 5500,
+          "description": ""
+        },
+        {
+          "name": "60-min Deep Tissue Massage",
+          "category": "massage",
+          "duration_min": 60,
+          "price_cents": 11000,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Restore Hyper Wellness - Park Slope",
+      "address": "225 Flatbush Ave, Brooklyn, NY 11217, USA",
+      "lat": 40.6813727,
+      "lng": -73.9752129,
+      "phone": "+1 718-559-0100",
+      "description": "Brooklyn wellness studio offering cryotherapy recovery sessions.",
+      "source_place_id": "ChIJaw53nw1bwokRV8kffBcZC1s",
+      "category_tags": "cryotherapy",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "3-min Whole Body Cryotherapy",
+          "category": "cryotherapy",
+          "duration_min": 3,
+          "price_cents": 4500,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "New York Sports Acupuncture",
+      "address": "12 Park St Ste 226, Brooklyn, NY 11206, USA",
+      "lat": 40.6991998,
+      "lng": -73.9384703,
+      "phone": "+1 888-375-5444",
+      "description": "Sports acupuncture clinic focused on athletic recovery and pain relief.",
+      "source_place_id": "ChIJKcfuFYtbwokRnZkiTH6d_lc",
+      "category_tags": "acupuncture",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "45-min Sports Acupuncture Session",
+          "category": "acupuncture",
+          "duration_min": 45,
+          "price_cents": 8500,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Acu For Athletes",
+      "address": "1592 President St, Brooklyn, NY 11213, USA",
+      "lat": 40.6670032,
+      "lng": -73.9352358,
+      "phone": "+1 929-348-2400",
+      "description": "Acupuncture practice for athletes targeting injury recovery and mobility.",
+      "source_place_id": "ChIJibwuZaFbwokRSUDouMYeMDQ",
+      "category_tags": "acupuncture",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "45-min Sports Acupuncture Session",
+          "category": "acupuncture",
+          "duration_min": 45,
+          "price_cents": 8500,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Cryo Energy",
+      "address": "1300 Union Tpke #108, New Hyde Park, NY 11040, USA",
+      "lat": 40.7531048,
+      "lng": -73.698335,
+      "phone": "+1 516-265-0878",
+      "description": "Long Island wellness center offering whole-body cryotherapy and recovery treatments.",
+      "source_place_id": "ChIJkafkMIBiwokRM6HPMLfGkrs",
+      "category_tags": "cryotherapy",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "3-min Whole Body Cryotherapy",
+          "category": "cryotherapy",
+          "duration_min": 3,
+          "price_cents": 4500,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "thebodybar",
+      "address": "37 Popham Rd, Scarsdale, NY 10583, USA",
+      "lat": 40.9888615,
+      "lng": -73.8074623,
+      "phone": "+1 914-786-6607",
+      "description": "Scarsdale recovery studio with infrared sauna, cold plunge, and bodywork.",
+      "source_place_id": "ChIJ6wN4ubGTwokRVIEtFldzyF4",
+      "category_tags": "sauna,cold_plunge,massage",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "45-min Contrast Therapy (Sauna + Cold Plunge)",
+          "category": "sauna",
+          "duration_min": 45,
+          "price_cents": 5500,
+          "description": ""
+        },
+        {
+          "name": "60-min Deep Tissue Massage",
+          "category": "massage",
+          "duration_min": 60,
+          "price_cents": 11000,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Albany Massage Professionals",
+      "address": "435 New Karner Rd, Albany, NY 12205, USA",
+      "lat": 42.7389302,
+      "lng": -73.8412835,
+      "phone": "+1 518-464-4480",
+      "description": "Albany massage practice offering deep tissue and therapeutic bodywork.",
+      "source_place_id": "ChIJWcZ-eVgL3okRZpTgN29pINg",
+      "category_tags": "massage",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "60-min Deep Tissue Massage",
+          "category": "massage",
+          "duration_min": 60,
+          "price_cents": 11000,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "BOSA Acupuncture & Wellness",
+      "address": "346 Seneca St, Buffalo, NY 14204, USA",
+      "lat": 42.8786169,
+      "lng": -78.8636765,
+      "phone": "+1 716-578-4734",
+      "description": "Buffalo acupuncture clinic focused on pain relief and recovery.",
+      "source_place_id": "ChIJmWWha_J004kRe3RVuu0XAn8",
+      "category_tags": "acupuncture",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "45-min Sports Acupuncture Session",
+          "category": "acupuncture",
+          "duration_min": 45,
+          "price_cents": 8500,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "The Wellness Lab",
+      "address": "1350 University Ave, Rochester, NY 14607, USA",
+      "lat": 43.1501066,
+      "lng": -77.5646286,
+      "phone": "+1 585-690-0693",
+      "description": "Rochester contrast therapy studio with sauna and cold plunge for recovery.",
+      "source_place_id": "ChIJQzmO6aC11okRK5juG0srShU",
+      "category_tags": "sauna,cold_plunge",
+      "rating": 4.6,
+      "source": "serpapi",
+      "services": [
+        {
+          "name": "45-min Contrast Therapy (Sauna + Cold Plunge)",
+          "category": "sauna",
+          "duration_min": 45,
+          "price_cents": 5500,
+          "description": ""
+        }
+      ]
+    }
+  ]

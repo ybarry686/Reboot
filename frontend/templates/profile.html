@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Profile — Recovery Hub{% endblock %}
+{% block content %}
+  <section class="auth-form">
+    <h1>Your profile</h1>
+    <form method="post">
+      <label>Name<input type="text" name="name" value="{{ user.name }}" required></label>
+      <label>Email<input type="email" name="email" value="{{ user.email }}" required></label>
+      <button type="submit">Save changes</button>
+    </form>
+  </section>
+{% endblock %}

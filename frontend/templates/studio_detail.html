@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}{{ studio.name }} — Recovery Hub{% endblock %}
+{% block content %}
+  <section class="detail-head">
+    <div>
+      <h1>{{ studio.name }}</h1>
+      <p class="address">{{ studio.address }}{% if studio.phone %} · {{ studio.phone }}{% endif %}</p>
+      {% if studio.rating %}<p class="rating">★ {{ studio.rating }}</p>{% endif %}
+      {% if studio.description %}<p>{{ studio.description }}</p>{% endif %}
+    </div>
+    {% if session.user_id %}
+      <form method="post" action="{{ url_for('favorites.toggle', studio_id=studio.id) }}">
+        <button type="submit" class="{{ 'btn-fav-active' if favorited else 'btn-fav' }}">
+          {{ '♥ Saved' if favorited else '♡ Save' }}
+        </button>
+      </form>
+    {% endif %}
+  </section>
+
+  <section class="services-list">
+    <h2>Services</h2>
+    <p class="muted" style="margin-bottom:14px;">Requesting a time sends it to Recovery Hub -- it doesn't reserve your spot at the studio. We'll show you their phone number so you can call and confirm.</p>
+    {% for service in services %}
+      <div class="service-row">
+        <div>
+          <strong>{{ service.name }}</strong>
+          <span class="muted">{{ service.duration_min }} min · ${{ "%.2f"|format(service.price_cents / 100) }}</span>
+          {% if service.description %}<p class="muted">{{ service.description }}</p>{% endif %}
+        </div>
+        {% if session.user_id %}
+          <form method="post" action="{{ url_for('booking.create') }}" class="book-form">
+            <input type="hidden" name="service_id" value="{{ service.id }}">
+            <input type="hidden" name="studio_id" value="{{ studio.id }}">
+            <input type="datetime-local" name="start_time" required>
+            <button type="submit">Request to book</button>
+          </form>
+        {% else %}
+          <a href="{{ url_for('auth.login') }}" class="btn-link">Log in to book</a>
+        {% endif %}
+      </div>
+    {% else %}
+      <p class="empty-state">This studio hasn't listed any services yet.</p>
+    {% endfor %}
+  </section>
+{% endblock %}

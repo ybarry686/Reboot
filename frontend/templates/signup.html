@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Sign up — Recovery Hub{% endblock %}
+{% block content %}
+  <section class="auth-form">
+    <h1>Create your account</h1>
+    <form method="post">
+      <label>Name<input type="text" name="name" required></label>
+      <label>Email<input type="email" name="email" required></label>
+      <label>Password<input type="password" name="password" minlength="8" required></label>
+      <button type="submit">Sign up</button>
+    </form>
+    <p class="muted">Already have an account? <a href="{{ url_for('auth.login') }}">Log in</a></p>
+  </section>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}My Bookings — Recovery Hub{% endblock %}
+{% block content %}
+  <h1>My Booking Requests</h1>
+  <p class="muted" style="margin-top:-14px; margin-bottom:20px;">These are requests, not confirmed appointments -- call the studio to lock in your time.</p>
+  <div class="bookings-list">
+    {% for b in bookings %}
+      <div class="booking-row {{ 'cancelled' if b.status == 'cancelled' }}">
+        <div>
+          <strong>{{ b.service_name }}</strong> at {{ b.studio_name }}
+          <p class="muted">{{ b.studio_address }}{% if b.studio_phone %} · {{ b.studio_phone }}{% endif %}</p>
+          <p class="muted">{{ b.start_time }} · {{ b.duration_min }} min · ${{ "%.2f"|format(b.price_cents / 100) }}</p>
+          <span class="status-pill status-{{ b.status }}">{{ b.status }}</span>
+        </div>
+        {% if b.status == 'requested' %}
+          <form method="post" action="{{ url_for('booking.cancel_view', booking_id=b.id) }}">
+            <button type="submit" class="btn-danger">Cancel</button>
+          </form>
+        {% endif %}
+      </div>
+    {% else %}
+      <p class="empty-state">No bookings yet — <a href="{{ url_for('search.home') }}">find a studio</a> to get started.</p>
+    {% endfor %}
+  </div>
+{% endblock %}

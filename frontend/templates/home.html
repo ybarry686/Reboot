@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Search — Find Fitness{% endblock %}
+{% block content %}
+  <section class="search-panel">
+    <h1>Find recovery near you</h1>
+    <form method="get" action="{{ url_for('search.home') }}" class="search-form">
+      <input type="text" name="q" placeholder="Search by name or address" value="{{ keyword }}">
+      <input type="text" name="zip" placeholder="Zip code" value="{{ zip_code }}" maxlength="5" pattern="[0-9]{5}" style="max-width:110px;">
+      <select name="category">
+        <option value="">All categories</option>
+        <option value="sauna" {% if category == 'sauna' %}selected{% endif %}>Sauna</option>
+        <option value="cold_plunge" {% if category == 'cold_plunge' %}selected{% endif %}>Cold plunge</option>
+        <option value="massage" {% if category == 'massage' %}selected{% endif %}>Massage</option>
+        <option value="cryotherapy" {% if category == 'cryotherapy' %}selected{% endif %}>Cryotherapy</option>
+        <option value="acupuncture" {% if category == 'acupuncture' %}selected{% endif %}>Acupuncture</option>
+      </select>
+      <input type="text" name="goal" placeholder="Optional: what are you recovering from?" value="{{ goal }}">
+      <button type="submit">Search</button>
+    </form>
+  </section>
+
+  {% if recommendation %}
+    <section class="ai-blurb">
+      <span class="ai-label">Rcovery Hub AI</span>
+      <p>{{ recommendation }}</p>
+    </section>
+  {% endif %}
+
+  <section class="results-grid">
+    {% for studio in studios %}
+      <article class="studio-card">
+        <div class="studio-card-head">
+          <h2><a href="{{ url_for('booking.studio_detail', studio_id=studio.id) }}">{{ studio.name }}</a></h2>
+          {% if studio.rating %}<span class="rating">★ {{ studio.rating }}</span>{% endif %}
+        </div>
+        <p class="address">{{ studio.address }}</p>
+        {% if studio.distance_mi is not none %}<p class="distance">{{ "%.1f"|format(studio.distance_mi) }} mi away</p>{% endif %}
+        <div class="tags">
+          {% for tag in studio.category_tags.split(',') %}
+            <span class="tag">{{ tag.replace('_', ' ') }}</span>
+          {% endfor %}
+        </div>
+        <p class="services-preview">
+          {% for s in studio.services[:2] %}{{ s.name }}{% if not loop.last %} · {% endif %}{% endfor %}
+        </p>
+        <a class="btn-link" href="{{ url_for('booking.studio_detail', studio_id=studio.id) }}">View &amp; book</a>
+      </article>
+    {% else %}
+      <p class="empty-state">No studios match yet — try a different category or clear your search.</p>
+    {% endfor %}
+  </section>
+{% endblock %}
