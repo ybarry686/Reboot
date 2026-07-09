@@ -24,8 +24,9 @@ def get_recommendation(goal, studios, model="gemini-2.5-flash"):
     prompt = (
         "A user is choosing a recovery service. Their goal: "
         f'"{goal}".\n\nHere are their nearby options:\n{studio_lines}\n\n'
-        "In 2-3 sentences, recommend which option(s) best fit their goal "
-        "and briefly say why. Be specific and concise, no bullet points."
+        "Recommend the 2 best options for their goal. One short sentence "
+        "each on why it fits. Pick the 2 best from the whole list, not just "
+        "the first ones. No bullet points."
     )
 
     url = GEMINI_URL_TMPL.format(model=model)

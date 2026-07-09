@@ -20,10 +20,14 @@ def home():
 
     recommendation = None
     if goal:
-        recommendation = get_recommendation(goal, studios[:5])
+        recommendation = get_recommendation(goal, studios)
 
     return render_template(
         "home.html",
-        studios=studios, category=category, keyword=keyword or "",
-        goal=goal or "", zip_code=zip_code or "", recommendation=recommendation,
+        studios=studios,
+        category=category,
+        keyword=keyword or "",
+        goal=goal or "",
+        zip_code=zip_code or "",
+        recommendation=recommendation,
     )
