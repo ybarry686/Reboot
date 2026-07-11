@@ -5,3 +5,5 @@ __pycache__/
 .pytest_cache/
 backend/db/recoveryhub.db
 .DS_Store
+pytest.ini
+*.db
