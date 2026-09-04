@@ -1,8 +1,8 @@
-# RecoveryHub Architecture
+# Reboot Architecture
 
 ## High-level architecture
 
-RecoveryHub is a Flask-based web application with a monolithic backend and a small static frontend. It is designed to connect users with local recovery studios, enabling search, favorite management, booking requests, and data import from external business search APIs.
+Reboot is a Flask-based web application with a monolithic backend and a small static frontend. It is designed to connect users with local recovery studios, enabling search, favorite management, booking requests, and data import from external business search APIs.
 
 ### Layers
 

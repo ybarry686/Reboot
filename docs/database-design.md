@@ -2,7 +2,7 @@
 
 ## Entities and relationships
 
-RecoveryHub uses a SQLite database with SQLAlchemy ORM models. The schema supports users, studios, services, bookings, and favorites.
+Reboot uses a SQLite database with SQLAlchemy ORM models. The schema supports users, studios, services, bookings, and favorites.
 
 ### Tables
 

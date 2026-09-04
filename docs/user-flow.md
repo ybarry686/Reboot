@@ -2,7 +2,7 @@
 
 ## High-level experience
 
-RecoveryHub is designed to let people discover, evaluate, and book recovery services with minimal friction.
+Reboot is designed to let people discover, evaluate, and book recovery services with minimal friction.
 
 - A visitor opens the site and begins with a search or category selection.
 - The application returns nearby recovery studios, sorts by distance, and highlights relevant service offerings.
