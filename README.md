@@ -2,7 +2,9 @@
 
 An adaptive recovery marketplace that leverages user lifestyle metrics to deliver context-aware, personalized recovery service recommendations and appointment bookings.
 
-## Why Reboot?
+![Terminal Prompt Preview](assets/reboot_home.png)
+
+## 💡Why Reboot?
 
 Many recovery providers are scattered across local listings, studio pages, and marketplace directories. Reboot centralizes:
 
@@ -13,7 +15,7 @@ Many recovery providers are scattered across local listings, studio pages, and m
 - studio import from live local-business search
 - optional AI-assisted recommendations for recovery goals
 
-## Key features
+## ✨ Key features
 
 - Search studios by category, keyword, or ZIP code
 - Studio detail view with service offerings and booking form
@@ -22,7 +24,7 @@ Many recovery providers are scattered across local listings, studio pages, and m
 - Data import from SerpApi with studio and default service creation
 - Optional Gemini-powered recommendation text
 
-## Architecture overview
+## 🏗️ Architecture overview
 
 Reboot is built with:
 
@@ -44,7 +46,7 @@ The codebase is separated into clear layers:
 - `docs/`: architecture, database design, API reference, and user flows
 
 
-## Quick Start
+## 🚀 Quick Start
 
 1. Clone the repository:
 
@@ -77,7 +79,7 @@ HOME_LAT=40.7410
 HOME_LNG=-73.9896
 ```
 
-## Running locally
+## 💻 Running locally
 
 ```bash
 python backend/app.py
@@ -86,7 +88,7 @@ python backend/app.py
 Open `http://127.0.0.1:5000` in your browser.
 
 
-## Deployment guidance
+## 🌐 Deployment guidance
 
 For production, run behind a WSGI server such as Gunicorn:
 
@@ -103,7 +105,7 @@ Recommended production improvements:
 - Add booking availability and provider confirmation workflows
 - Add automated tests and CI checks
 
-## Documentation
+## 📚 Documentation
 
 See the `docs/` folder for:
 
