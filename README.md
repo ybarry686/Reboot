@@ -1,4 +1,4 @@
-# Reboot
+# Reboot 🧘
 
 An adaptive recovery marketplace that leverages user lifestyle metrics to deliver context-aware, personalized recovery service recommendations and appointment bookings.
 
